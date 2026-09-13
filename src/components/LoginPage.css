@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #023459, #1E646E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin: 0 0 1.75rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.login-container input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #023459;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.login-container input::placeholder {
+    color: #6b7280;
+}
+
+.login-container input:focus {
+    border-color: #4FD1C5;
+    box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.25);
+    outline: none;
+    background: #ffffff;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.login-container .btn-primary {
+    background: #4FD1C5;
+    color: #023459;
+}
+
+.login-container .btn-primary:hover {
+    background: #3fc0b3;
+}
+
+.login-container .btn-secondary {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.login-container .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+.user-info {
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.error-message {
+    color: #ff8080;
+    background: rgba(255, 0, 0, 0.08);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin: 0.75rem 0;
+}
+
+.login-container button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
